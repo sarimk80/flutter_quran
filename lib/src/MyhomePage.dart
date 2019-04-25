@@ -16,7 +16,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar:AppBar(
         elevation: 0,
         leading: IconButton(
             icon: Image.asset('assests/images/leading.png'), onPressed: null),
@@ -27,6 +27,44 @@ class _MyHomePageState extends State<MyHomePage> {
           shrinkWrap: true,
           scrollDirection: Axis.vertical,
           children: <Widget>[
+            Card(
+              margin: EdgeInsets.all(25),
+              elevation: 20,
+              borderOnForeground: true,
+              color: Color(0xffecf0f1),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(20))),
+              child: InkWell(
+                borderRadius: BorderRadius.circular(20),
+                onTap: () {},
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  width: 200,
+                  height: 200,
+                  child: Column(
+                    children: <Widget>[
+                      Text(
+                        "Offline Holy Quran",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.black, fontSize: 20),
+                      ),
+                      IconButton(
+                        padding: EdgeInsets.all(20),
+                        iconSize: 60,
+                        icon: Image.asset('assests/images/quran.png'),
+                        onPressed: null,
+                        alignment: Alignment.center,
+                      ),
+                      Text(
+                        "قران مجید",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.black, fontSize: 15),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
             Card(
               margin: EdgeInsets.all(25),
               elevation: 20,
