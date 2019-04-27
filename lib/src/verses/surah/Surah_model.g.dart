@@ -178,8 +178,6 @@ class _$AyahsSerializer implements StructuredSerializer<Ayahs> {
       'hizbQuarter',
       serializers.serialize(object.hizbQuarter,
           specifiedType: const FullType(int)),
-      'sajda',
-      serializers.serialize(object.sajda, specifiedType: const FullType(bool)),
     ];
 
     return result;
@@ -227,10 +225,6 @@ class _$AyahsSerializer implements StructuredSerializer<Ayahs> {
         case 'hizbQuarter':
           result.hizbQuarter = serializers.deserialize(value,
               specifiedType: const FullType(int)) as int;
-          break;
-        case 'sajda':
-          result.sajda = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool;
           break;
       }
     }
@@ -522,8 +516,6 @@ class _$Ayahs extends Ayahs {
   final int ruku;
   @override
   final int hizbQuarter;
-  @override
-  final bool sajda;
 
   factory _$Ayahs([void Function(AyahsBuilder) updates]) =>
       (new AyahsBuilder()..update(updates)).build();
@@ -536,8 +528,7 @@ class _$Ayahs extends Ayahs {
       this.manzil,
       this.page,
       this.ruku,
-      this.hizbQuarter,
-      this.sajda})
+      this.hizbQuarter})
       : super._() {
     if (number == null) {
       throw new BuiltValueNullFieldError('Ayahs', 'number');
@@ -563,9 +554,6 @@ class _$Ayahs extends Ayahs {
     if (hizbQuarter == null) {
       throw new BuiltValueNullFieldError('Ayahs', 'hizbQuarter');
     }
-    if (sajda == null) {
-      throw new BuiltValueNullFieldError('Ayahs', 'sajda');
-    }
   }
 
   @override
@@ -586,8 +574,7 @@ class _$Ayahs extends Ayahs {
         manzil == other.manzil &&
         page == other.page &&
         ruku == other.ruku &&
-        hizbQuarter == other.hizbQuarter &&
-        sajda == other.sajda;
+        hizbQuarter == other.hizbQuarter;
   }
 
   @override
@@ -597,15 +584,13 @@ class _$Ayahs extends Ayahs {
             $jc(
                 $jc(
                     $jc(
-                        $jc(
-                            $jc($jc($jc(0, number.hashCode), text.hashCode),
-                                numberInSurah.hashCode),
-                            juz.hashCode),
-                        manzil.hashCode),
-                    page.hashCode),
-                ruku.hashCode),
-            hizbQuarter.hashCode),
-        sajda.hashCode));
+                        $jc($jc($jc(0, number.hashCode), text.hashCode),
+                            numberInSurah.hashCode),
+                        juz.hashCode),
+                    manzil.hashCode),
+                page.hashCode),
+            ruku.hashCode),
+        hizbQuarter.hashCode));
   }
 
   @override
@@ -618,8 +603,7 @@ class _$Ayahs extends Ayahs {
           ..add('manzil', manzil)
           ..add('page', page)
           ..add('ruku', ruku)
-          ..add('hizbQuarter', hizbQuarter)
-          ..add('sajda', sajda))
+          ..add('hizbQuarter', hizbQuarter))
         .toString();
   }
 }
@@ -659,10 +643,6 @@ class AyahsBuilder implements Builder<Ayahs, AyahsBuilder> {
   int get hizbQuarter => _$this._hizbQuarter;
   set hizbQuarter(int hizbQuarter) => _$this._hizbQuarter = hizbQuarter;
 
-  bool _sajda;
-  bool get sajda => _$this._sajda;
-  set sajda(bool sajda) => _$this._sajda = sajda;
-
   AyahsBuilder();
 
   AyahsBuilder get _$this {
@@ -675,7 +655,6 @@ class AyahsBuilder implements Builder<Ayahs, AyahsBuilder> {
       _page = _$v.page;
       _ruku = _$v.ruku;
       _hizbQuarter = _$v.hizbQuarter;
-      _sajda = _$v.sajda;
       _$v = null;
     }
     return this;
@@ -705,8 +684,7 @@ class AyahsBuilder implements Builder<Ayahs, AyahsBuilder> {
             manzil: manzil,
             page: page,
             ruku: ruku,
-            hizbQuarter: hizbQuarter,
-            sajda: sajda);
+            hizbQuarter: hizbQuarter);
     replace(_$result);
     return _$result;
   }

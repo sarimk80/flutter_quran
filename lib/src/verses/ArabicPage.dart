@@ -58,9 +58,10 @@ class _ArabicPageState extends State<ArabicPage> with AutomaticKeepAliveClientMi
     return ListView(
       children: e.ayahs
           .map((Ayahs ayahs) => ListTile(
+        contentPadding: EdgeInsets.all(10),
                 title: Text(
                   ayahs.text,
-                  style: TextStyle(fontSize: 20, wordSpacing: 2),
+                  style: TextStyle(fontSize: 25, wordSpacing: 5),
                   textAlign: TextAlign.right,
                 ),
               ))

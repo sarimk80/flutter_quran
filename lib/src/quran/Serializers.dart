@@ -8,8 +8,11 @@ import 'package:built_value/serializer.dart';
 import 'package:built_value/standard_json_plugin.dart';
 import 'package:built_collection/built_collection.dart';
 import 'Chapters.dart';
+import 'package:flutter_quran/src/namaz_timing/model/Namaz_model.dart';
+import 'package:flutter_quran/src/hadith/hadith_model/Hadith.dart';
 
 part 'Serializers.g.dart';
+
 /// Example of how to use built_value serialization.
 ///
 /// Declare a top level [Serializers] field called serializers. Annotate it
@@ -21,10 +24,8 @@ part 'Serializers.g.dart';
 /// types needed transitively via fields.
 ///
 /// You usually only need to do this once per project.
-@SerializersFor(const [
-  Main
-])
+@SerializersFor(const [Main, Namaz,Hadith])
 Serializers serializers = _$serializers;
 
 Serializers standardSerializers =
-(serializers.toBuilder()..addPlugin(new StandardJsonPlugin())).build();
+    (serializers.toBuilder()..addPlugin(new StandardJsonPlugin())).build();

@@ -47,7 +47,8 @@ abstract class Ayahs implements Built<Ayahs, AyahsBuilder> {
   int get page; //": 604,
   int get ruku; //": 556,
   int get hizbQuarter; //": 240,
-  bool get sajda; //": false
+//  @nullable
+//  bool get sajda; ": false
   Ayahs._();
 
   factory Ayahs([updates(AyahsBuilder b)]) = _$Ayahs;

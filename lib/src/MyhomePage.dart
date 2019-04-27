@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_quran/src/hadith/HadithPage.dart';
 import 'package:flutter_quran/src/namaz_timing/NamazPage.dart';
 import 'package:flutter_quran/src/quran/QuranPage.dart';
+import 'offline_quran/Quran_page.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -16,7 +17,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:AppBar(
+      appBar: AppBar(
         elevation: 0,
         leading: IconButton(
             icon: Image.asset('assests/images/leading.png'), onPressed: null),
@@ -36,7 +37,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   borderRadius: BorderRadius.all(Radius.circular(20))),
               child: InkWell(
                 borderRadius: BorderRadius.circular(20),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Quran_page()));
+                },
                 child: Container(
                   padding: EdgeInsets.all(20),
                   width: 200,
@@ -115,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: InkWell(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Hadith()));
+                      MaterialPageRoute(builder: (context) => HadithPage()));
                 },
                 child: Container(
                   padding: EdgeInsets.all(20),
@@ -186,6 +190,11 @@ class _MyHomePageState extends State<MyHomePage> {
             )
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        elevation: 6,
+        child: Icon(Icons.search),
       ),
       // This trailing comma makes auto-formatting nicer for build methods.
     );
