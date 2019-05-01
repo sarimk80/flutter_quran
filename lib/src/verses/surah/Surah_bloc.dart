@@ -1,9 +1,7 @@
 import 'dart:async';
-import 'dart:collection';
-import 'dart:io';
-import 'Surah_model.dart';
+import 'package:flutter_quran/src/verses/surah/Surah_model.dart';
 import 'package:http/http.dart' as http;
-import 'package:path_provider/path_provider.dart';
+
 
 class Surah_bloc {
   var data_arabic = <Data>[];

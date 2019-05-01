@@ -1,7 +1,7 @@
 import 'package:built_value/built_value.dart';
 import 'package:built_collection/built_collection.dart';
 import 'dart:convert' as json;
-import 'package:flutter_quran/src/quran/Serializers.dart';
+import 'package:flutter_quran/src/serializers/Serializers.dart';
 import 'package:built_value/serializer.dart';
 
 part 'Namaz_model.g.dart';

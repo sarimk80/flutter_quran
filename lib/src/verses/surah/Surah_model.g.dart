@@ -159,26 +159,55 @@ class _$AyahsSerializer implements StructuredSerializer<Ayahs> {
   @override
   Iterable serialize(Serializers serializers, Ayahs object,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = <Object>[
-      'number',
-      serializers.serialize(object.number, specifiedType: const FullType(int)),
-      'text',
-      serializers.serialize(object.text, specifiedType: const FullType(String)),
-      'numberInSurah',
-      serializers.serialize(object.numberInSurah,
-          specifiedType: const FullType(int)),
-      'juz',
-      serializers.serialize(object.juz, specifiedType: const FullType(int)),
-      'manzil',
-      serializers.serialize(object.manzil, specifiedType: const FullType(int)),
-      'page',
-      serializers.serialize(object.page, specifiedType: const FullType(int)),
-      'ruku',
-      serializers.serialize(object.ruku, specifiedType: const FullType(int)),
-      'hizbQuarter',
-      serializers.serialize(object.hizbQuarter,
-          specifiedType: const FullType(int)),
-    ];
+    final result = <Object>[];
+    if (object.number != null) {
+      result
+        ..add('number')
+        ..add(serializers.serialize(object.number,
+            specifiedType: const FullType(int)));
+    }
+    if (object.text != null) {
+      result
+        ..add('text')
+        ..add(serializers.serialize(object.text,
+            specifiedType: const FullType(String)));
+    }
+    if (object.numberInSurah != null) {
+      result
+        ..add('numberInSurah')
+        ..add(serializers.serialize(object.numberInSurah,
+            specifiedType: const FullType(int)));
+    }
+    if (object.juz != null) {
+      result
+        ..add('juz')
+        ..add(serializers.serialize(object.juz,
+            specifiedType: const FullType(int)));
+    }
+    if (object.manzil != null) {
+      result
+        ..add('manzil')
+        ..add(serializers.serialize(object.manzil,
+            specifiedType: const FullType(int)));
+    }
+    if (object.page != null) {
+      result
+        ..add('page')
+        ..add(serializers.serialize(object.page,
+            specifiedType: const FullType(int)));
+    }
+    if (object.ruku != null) {
+      result
+        ..add('ruku')
+        ..add(serializers.serialize(object.ruku,
+            specifiedType: const FullType(int)));
+    }
+    if (object.hizbQuarter != null) {
+      result
+        ..add('hizbQuarter')
+        ..add(serializers.serialize(object.hizbQuarter,
+            specifiedType: const FullType(int)));
+    }
 
     return result;
   }
@@ -529,32 +558,7 @@ class _$Ayahs extends Ayahs {
       this.page,
       this.ruku,
       this.hizbQuarter})
-      : super._() {
-    if (number == null) {
-      throw new BuiltValueNullFieldError('Ayahs', 'number');
-    }
-    if (text == null) {
-      throw new BuiltValueNullFieldError('Ayahs', 'text');
-    }
-    if (numberInSurah == null) {
-      throw new BuiltValueNullFieldError('Ayahs', 'numberInSurah');
-    }
-    if (juz == null) {
-      throw new BuiltValueNullFieldError('Ayahs', 'juz');
-    }
-    if (manzil == null) {
-      throw new BuiltValueNullFieldError('Ayahs', 'manzil');
-    }
-    if (page == null) {
-      throw new BuiltValueNullFieldError('Ayahs', 'page');
-    }
-    if (ruku == null) {
-      throw new BuiltValueNullFieldError('Ayahs', 'ruku');
-    }
-    if (hizbQuarter == null) {
-      throw new BuiltValueNullFieldError('Ayahs', 'hizbQuarter');
-    }
-  }
+      : super._();
 
   @override
   Ayahs rebuild(void Function(AyahsBuilder) updates) =>

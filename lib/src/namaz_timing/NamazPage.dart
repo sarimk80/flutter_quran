@@ -49,60 +49,91 @@ class _NamazState extends State<Namaz> {
       shrinkWrap: true,
       physics: ClampingScrollPhysics(),
       children: <Widget>[
-        ListTile(title: Text(e.date_for),),
+        Container(
+            decoration: BoxDecoration(
+                border: Border(
+                    bottom: BorderSide(color: Colors.white.withOpacity(0.5)))),
+            child: ListTile(
+              title: Text(e.date_for,textAlign: TextAlign.center,),
+            )),
         Padding(padding: EdgeInsets.all(10)),
-        ListTile(
-          leading: Text(
-            "Fajar:",
-            style: TextStyle(fontSize: 20),
-          ),
-          title: Text(
-            e.fajr,
-            style: TextStyle(fontSize: 30),
+        Container(
+          decoration: BoxDecoration(
+              border: Border(
+                  bottom: BorderSide(color: Colors.white.withOpacity(0.5)))),
+          child: ListTile(
+            leading: Text(
+              "Fajar:",
+              style: TextStyle(fontSize: 20),
+            ),
+            title: Text(
+              e.fajr,
+              style: TextStyle(fontSize: 30),
+            ),
           ),
         ),
         Padding(padding: EdgeInsets.all(10)),
-        ListTile(
-          leading: Text(
-            "Dhuhr:",
-            style: TextStyle(fontSize: 20),
-          ),
-          title: Text(
-            e.dhuhr,
-            style: TextStyle(fontSize: 30),
-          ),
-        ),
-        Padding(padding: EdgeInsets.all(10)),
-        ListTile(
-          leading: Text(
-            "Asr:",
-            style: TextStyle(fontSize: 20),
-          ),
-          title: Text(
-            e.asr,
-            style: TextStyle(fontSize: 30),
+        Container(
+          decoration: BoxDecoration(
+              border: Border(
+                  bottom: BorderSide(color: Colors.white.withOpacity(0.5)))),
+          child: ListTile(
+            leading: Text(
+              "Dhuhr:",
+              style: TextStyle(fontSize: 20),
+            ),
+            title: Text(
+              e.dhuhr,
+              style: TextStyle(fontSize: 30),
+            ),
           ),
         ),
         Padding(padding: EdgeInsets.all(10)),
-        ListTile(
-          leading: Text(
-            "Maghrib:",
-            style: TextStyle(fontSize: 20),
-          ),
-          title: Text(
-            e.maghrib,
-            style: TextStyle(fontSize: 30),
+        Container(
+          decoration: BoxDecoration(
+              border: Border(
+                  bottom: BorderSide(color: Colors.white.withOpacity(0.5)))),
+          child: ListTile(
+            leading: Text(
+              "Asr:",
+              style: TextStyle(fontSize: 20),
+            ),
+            title: Text(
+              e.asr,
+              style: TextStyle(fontSize: 30),
+            ),
           ),
         ),
         Padding(padding: EdgeInsets.all(10)),
-        ListTile(
-          leading: Text(
-            "Isha:",
-            style: TextStyle(fontSize: 20),
+        Container(
+          decoration: BoxDecoration(
+              border: Border(
+                  bottom: BorderSide(color: Colors.white.withOpacity(0.5)))),
+          child: ListTile(
+            leading: Text(
+              "Maghrib:",
+              style: TextStyle(fontSize: 20),
+            ),
+            title: Text(
+              e.maghrib,
+              style: TextStyle(fontSize: 30),
+            ),
           ),
-          title: Text(
-            e.isha,
-            style: TextStyle(fontSize: 30),
+        ),
+        Padding(padding: EdgeInsets.all(10)),
+        Container(
+          decoration: BoxDecoration(
+              border: Border(
+                  bottom: BorderSide(color: Colors.white.withOpacity(0.5)))),
+          child: ListTile(
+            leading: Text(
+              "Isha:",
+              style: TextStyle(fontSize: 20),
+            ),
+            title: Text(
+              e.isha,
+              style: TextStyle(fontSize: 30),
+            ),
           ),
         )
       ],

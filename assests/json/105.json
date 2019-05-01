@@ -1,0 +1,79 @@
+{
+  "code": 200,
+  "status": "OK",
+  "data": [
+    {
+      "number": 105,
+      "name": "سورة الفيل",
+      "englishName": "Al-Fil",
+      "englishNameTranslation": "The Elephant",
+      "revelationType": "Meccan",
+      "numberOfAyahs": 5,
+      "ayahs": [
+        {
+          "number": 6189,
+          "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَٰبِ ٱلْفِيلِ",
+          "numberInSurah": 1,
+          "juz": 30,
+          "manzil": 7,
+          "page": 601,
+          "ruku": 547,
+          "hizbQuarter": 240,
+          "sajda": false
+        },
+        {
+          "number": 6190,
+          "text": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍۢ",
+          "numberInSurah": 2,
+          "juz": 30,
+          "manzil": 7,
+          "page": 601,
+          "ruku": 547,
+          "hizbQuarter": 240,
+          "sajda": false
+        },
+        {
+          "number": 6191,
+          "text": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
+          "numberInSurah": 3,
+          "juz": 30,
+          "manzil": 7,
+          "page": 601,
+          "ruku": 547,
+          "hizbQuarter": 240,
+          "sajda": false
+        },
+        {
+          "number": 6192,
+          "text": "تَرْمِيهِم بِحِجَارَةٍۢ مِّن سِجِّيلٍۢ",
+          "numberInSurah": 4,
+          "juz": 30,
+          "manzil": 7,
+          "page": 601,
+          "ruku": 547,
+          "hizbQuarter": 240,
+          "sajda": false
+        },
+        {
+          "number": 6193,
+          "text": "فَجَعَلَهُمْ كَعَصْفٍۢ مَّأْكُولٍۭ",
+          "numberInSurah": 5,
+          "juz": 30,
+          "manzil": 7,
+          "page": 601,
+          "ruku": 547,
+          "hizbQuarter": 240,
+          "sajda": false
+        }
+      ],
+      "edition": {
+        "identifier": "quran-uthmani",
+        "language": "ar",
+        "name": "Uthamani",
+        "englishName": "Uthamani",
+        "format": "text",
+        "type": "quran"
+      }
+    }
+  ]
+}

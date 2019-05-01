@@ -1,0 +1,244 @@
+{
+  "code": 200,
+  "status": "OK",
+  "data": [
+    {
+      "number": 90,
+      "name": "سورة البلد",
+      "englishName": "Al-Balad",
+      "englishNameTranslation": "The City",
+      "revelationType": "Meccan",
+      "numberOfAyahs": 20,
+      "ayahs": [
+        {
+          "number": 6024,
+          "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ لَآ أُقْسِمُ بِهَٰذَا ٱلْبَلَدِ",
+          "numberInSurah": 1,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6025,
+          "text": "وَأَنتَ حِلٌّۢ بِهَٰذَا ٱلْبَلَدِ",
+          "numberInSurah": 2,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6026,
+          "text": "وَوَالِدٍۢ وَمَا وَلَدَ",
+          "numberInSurah": 3,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6027,
+          "text": "لَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ فِى كَبَدٍ",
+          "numberInSurah": 4,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6028,
+          "text": "أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌۭ",
+          "numberInSurah": 5,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6029,
+          "text": "يَقُولُ أَهْلَكْتُ مَالًۭا لُّبَدًا",
+          "numberInSurah": 6,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6030,
+          "text": "أَيَحْسَبُ أَن لَّمْ يَرَهُۥٓ أَحَدٌ",
+          "numberInSurah": 7,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6031,
+          "text": "أَلَمْ نَجْعَل لَّهُۥ عَيْنَيْنِ",
+          "numberInSurah": 8,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6032,
+          "text": "وَلِسَانًۭا وَشَفَتَيْنِ",
+          "numberInSurah": 9,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6033,
+          "text": "وَهَدَيْنَٰهُ ٱلنَّجْدَيْنِ",
+          "numberInSurah": 10,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6034,
+          "text": "فَلَا ٱقْتَحَمَ ٱلْعَقَبَةَ",
+          "numberInSurah": 11,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6035,
+          "text": "وَمَآ أَدْرَىٰكَ مَا ٱلْعَقَبَةُ",
+          "numberInSurah": 12,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6036,
+          "text": "فَكُّ رَقَبَةٍ",
+          "numberInSurah": 13,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6037,
+          "text": "أَوْ إِطْعَٰمٌۭ فِى يَوْمٍۢ ذِى مَسْغَبَةٍۢ",
+          "numberInSurah": 14,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6038,
+          "text": "يَتِيمًۭا ذَا مَقْرَبَةٍ",
+          "numberInSurah": 15,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6039,
+          "text": "أَوْ مِسْكِينًۭا ذَا مَتْرَبَةٍۢ",
+          "numberInSurah": 16,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6040,
+          "text": "ثُمَّ كَانَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ وَتَوَاصَوْا۟ بِٱلصَّبْرِ وَتَوَاصَوْا۟ بِٱلْمَرْحَمَةِ",
+          "numberInSurah": 17,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6041,
+          "text": "أُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلْمَيْمَنَةِ",
+          "numberInSurah": 18,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6042,
+          "text": "وَٱلَّذِينَ كَفَرُوا۟ بِـَٔايَٰتِنَا هُمْ أَصْحَٰبُ ٱلْمَشْـَٔمَةِ",
+          "numberInSurah": 19,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        },
+        {
+          "number": 6043,
+          "text": "عَلَيْهِمْ نَارٌۭ مُّؤْصَدَةٌۢ",
+          "numberInSurah": 20,
+          "juz": 30,
+          "manzil": 7,
+          "page": 594,
+          "ruku": 532,
+          "hizbQuarter": 238,
+          "sajda": false
+        }
+      ],
+      "edition": {
+        "identifier": "quran-uthmani",
+        "language": "ar",
+        "name": "Uthamani",
+        "englishName": "Uthamani",
+        "format": "text",
+        "type": "quran"
+      }
+    }
+  ]
+}

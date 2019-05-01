@@ -39,13 +39,21 @@ abstract class Data implements Built<Data, DataBuilder> {
 abstract class Ayahs implements Built<Ayahs, AyahsBuilder> {
   static Serializer<Ayahs> get serializer => _$ayahsSerializer;
 
-  int get number; //": 6231,
+  @nullable
+  int get number;
+  @nullable //": 6231,
   String get text; //": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+  @nullable
   int get numberInSurah; //": 1,
+  @nullable
   int get juz; //": 30,
+  @nullable
   int get manzil; //": 7,
+  @nullable
   int get page; //": 604,
+  @nullable
   int get ruku; //": 556,
+  @nullable
   int get hizbQuarter; //": 240,
 //  @nullable
 //  bool get sajda; ": false

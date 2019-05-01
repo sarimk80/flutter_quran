@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_quran/src/hadith/HadithPage.dart';
 import 'package:flutter_quran/src/namaz_timing/NamazPage.dart';
 import 'package:flutter_quran/src/quran/QuranPage.dart';
-import 'offline_quran/Quran_page.dart';
+import 'offline_quran/chapters/Chapters_page.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 borderRadius: BorderRadius.circular(20),
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Quran_page()));
+                      MaterialPageRoute(builder: (context) => ChapterPage()));
                 },
                 child: Container(
                   padding: EdgeInsets.all(20),

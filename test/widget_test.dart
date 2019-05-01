@@ -8,10 +8,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
-import 'package:flutter_quran/main.dart';
 import 'package:flutter_quran/src/namaz_timing/model/Namaz_model.dart';
 import 'package:flutter_quran/src/hadith/hadith_model/Hadith.dart';
-
 
 void main() {
 
@@ -32,4 +30,6 @@ void main() {
     expect(gethadith(storyRes.body), isNotNull);
 
   });
+
+
 }

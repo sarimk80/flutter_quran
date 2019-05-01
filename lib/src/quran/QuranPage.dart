@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quran/src/verses/VersesPage.dart';
-import 'QuranBloc.dart';
-import 'Chapters.dart';
-import 'SearchBar.dart';
+import 'package:flutter_quran/src/quran/bloc/QuranBloc.dart';
+import 'package:flutter_quran/src/quran/model/Chapters.dart';
+import 'package:flutter_quran/src/quran/search_delegate/SearchBar.dart';
 
 class Quran extends StatefulWidget {
   @override

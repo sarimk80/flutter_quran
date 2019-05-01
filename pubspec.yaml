@@ -53,7 +53,125 @@ flutter:
     - assests/images/namaz.png
     - assests/images/tasbee.png
     - assests/images/salat.png
-    - assests/json/wholeQuran.json
+
+    - assests/json/1.json
+    - assests/json/2.json
+    - assests/json/3.json
+    - assests/json/4.json
+    - assests/json/5.json
+    - assests/json/6.json
+    - assests/json/7.json
+    - assests/json/8.json
+    - assests/json/9.json
+    - assests/json/10.json
+    - assests/json/11.json
+    - assests/json/12.json
+    - assests/json/13.json
+    - assests/json/14.json
+    - assests/json/15.json
+    - assests/json/16.json
+    - assests/json/17.json
+    - assests/json/18.json
+    - assests/json/19.json
+    - assests/json/20.json
+    - assests/json/21.json
+    - assests/json/22.json
+    - assests/json/23.json
+    - assests/json/24.json
+    - assests/json/25.json
+    - assests/json/26.json
+    - assests/json/27.json
+    - assests/json/28.json
+    - assests/json/29.json
+    - assests/json/30.json
+    - assests/json/31.json
+    - assests/json/32.json
+    - assests/json/33.json
+    - assests/json/34.json
+    - assests/json/35.json
+    - assests/json/36.json
+    - assests/json/37.json
+    - assests/json/38.json
+    - assests/json/39.json
+    - assests/json/40.json
+    - assests/json/41.json
+    - assests/json/42.json
+    - assests/json/43.json
+    - assests/json/44.json
+    - assests/json/45.json
+    - assests/json/46.json
+    - assests/json/47.json
+    - assests/json/48.json
+    - assests/json/49.json
+    - assests/json/50.json
+    - assests/json/51.json
+    - assests/json/52.json
+    - assests/json/53.json
+    - assests/json/54.json
+    - assests/json/55.json
+    - assests/json/56.json
+    - assests/json/57.json
+    - assests/json/58.json
+    - assests/json/59.json
+    - assests/json/60.json
+    - assests/json/61.json
+    - assests/json/62.json
+    - assests/json/63.json
+    - assests/json/64.json
+    - assests/json/65.json
+    - assests/json/66.json
+    - assests/json/67.json
+    - assests/json/68.json
+    - assests/json/69.json
+    - assests/json/71.json
+    - assests/json/72.json
+    - assests/json/73.json
+    - assests/json/74.json
+    - assests/json/75.json
+    - assests/json/76.json
+    - assests/json/77.json
+    - assests/json/78.json
+    - assests/json/79.json
+    - assests/json/80.json
+    - assests/json/81.json
+    - assests/json/82.json
+    - assests/json/83.json
+    - assests/json/84.json
+    - assests/json/85.json
+    - assests/json/86.json
+    - assests/json/87.json
+    - assests/json/88.json
+    - assests/json/89.json
+    - assests/json/90.json
+    - assests/json/91.json
+    - assests/json/92.json
+    - assests/json/93.json
+    - assests/json/94.json
+    - assests/json/95.json
+    - assests/json/96.json
+    - assests/json/97.json
+    - assests/json/98.json
+    - assests/json/99.json
+    - assests/json/100.json
+    - assests/json/101.json
+    - assests/json/102.json
+    - assests/json/103.json
+    - assests/json/104.json
+    - assests/json/105.json
+    - assests/json/106.json
+    - assests/json/107.json
+    - assests/json/108.json
+    - assests/json/109.json
+    - assests/json/110.json
+    - assests/json/111.json
+    - assests/json/112.json
+    - assests/json/113.json
+    - assests/json/114.json
+    - assests/json/quran.json
+
+
+
+
 
     #   To add assets to your application, add an assets section, like this:
 #    assets:
