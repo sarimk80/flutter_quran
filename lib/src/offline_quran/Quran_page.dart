@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quran/src/verses/surah/Surah_model.dart';
 import 'package:flutter_quran/src/offline_quran/bloc/off_Bloc.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class Quran_page extends StatefulWidget {
   final int id;
   final String name;
+  final double position;
 
-  Quran_page({Key key, this.id, this.name}) : super(key: key);
+  Quran_page({Key key, this.id, this.name, this.position}) : super(key: key);
 
   @override
   _Quran_pageState createState() => _Quran_pageState();
@@ -14,11 +16,26 @@ class Quran_page extends StatefulWidget {
 
 class _Quran_pageState extends State<Quran_page> {
   Bloc _bloc;
+  ScrollController _controller;
+
+  Future<void> setName() async {
+    final prefs = await SharedPreferences.getInstance();
+    prefs.setString("Name", widget.name);
+    prefs.setInt("id", widget.id);
+  }
+
+  _ScrollPosition() async {
+    final prefs = await SharedPreferences.getInstance();
+    prefs.setDouble("position", _controller.position.pixels);
+  }
 
   @override
   void initState() {
     super.initState();
     _bloc = Bloc(context, widget.id);
+    _controller = ScrollController(initialScrollOffset: widget.position ?? 0.0);
+    _controller.addListener(_ScrollPosition);
+    setName();
   }
 
   @override
@@ -36,6 +53,7 @@ class _Quran_pageState extends State<Quran_page> {
               );
             } else {
               return ListView.builder(
+                  controller: _controller,
                   itemCount: 1,
                   shrinkWrap: true,
                   physics: ClampingScrollPhysics(),
@@ -54,6 +72,7 @@ class _Quran_pageState extends State<Quran_page> {
   void dispose() {
     super.dispose();
     _bloc.dispose();
+    _controller.dispose();
   }
 
   Widget _builtlist(Data e) {
