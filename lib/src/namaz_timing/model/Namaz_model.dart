@@ -74,7 +74,7 @@ abstract class TodayWeather
 
   factory TodayWeather([updates(TodayWeatherBuilder b)]) = _$TodayWeather;
 
-  int get pressure; // 1008,
+  //int get pressure; // 1008,
   String get temperature; //: "35"
 
 }

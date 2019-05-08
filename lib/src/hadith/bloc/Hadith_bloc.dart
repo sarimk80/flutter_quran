@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'package:flutter_quran/src/hadith/hadith_model/Hadith.dart';
 import 'package:translator/translator.dart';
-import 'dart:convert' as json;
+
 
 class HadithBloc {
   var hadith = Hadith();
@@ -28,9 +28,9 @@ class HadithBloc {
     GoogleTranslator googleTranslator = GoogleTranslator();
 
     try {
-      googleTranslator.translate(hadith.text, from: 'en', to: 'ch').then((s) {
+      googleTranslator.translate(hadith.text, from: 'en', to: 'ur').then((s) {
         print(s);
-        _stringController.add(s);
+        _inString.add(s);
       });
     } catch (Exception) {}
 

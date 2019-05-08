@@ -18,7 +18,7 @@ class _ChapterPageState extends State<ChapterPage> {
 
   Future<UserInfo> getString() async {
     final prefs = await SharedPreferences.getInstance();
-    name = prefs.getString("Name") ?? "Null";
+    name = prefs.getString("Name") ?? "Al-Faatiha";
     id = prefs.getInt("id") ?? 1;
     position = prefs.getDouble("position") ?? 0.0;
     UserInfo _userinfo = UserInfo(name, id, position);
@@ -61,7 +61,7 @@ class _ChapterPageState extends State<ChapterPage> {
                     }
                   }),
               floatingActionButton: FlatButton(
-                shape: BeveledRectangleBorder(
+                shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(5))),
                 onPressed: () {
                   Navigator.push(

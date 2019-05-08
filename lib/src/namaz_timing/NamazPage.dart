@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quran/src/namaz_timing/model/Namaz_model.dart';
 import 'bloc/NamazBloc.dart';
+import 'package:location/location.dart';
+import 'package:geocoder/geocoder.dart';
 
 class Namaz extends StatefulWidget {
   @override
@@ -10,10 +12,30 @@ class Namaz extends StatefulWidget {
 class _NamazState extends State<Namaz> {
   NamazBloc _bloc;
 
+  LocationData _currentLocation;
+
+  Location _location = Location();
+
+  Future<String> getLoc() async {
+    _currentLocation = await _location.getLocation();
+
+    try {
+      final coordinates = new Coordinates(
+          _currentLocation.latitude, _currentLocation.longitude);
+      var addresses =
+          await Geocoder.local.findAddressesFromCoordinates(coordinates);
+      var first = addresses.first;
+      _bloc = NamazBloc(first.locality);
+      return first.locality;
+    } catch (e) {
+      _bloc = NamazBloc('Karachi');
+    }
+    return "Earth";
+  }
+
   @override
   void initState() {
     super.initState();
-    _bloc = NamazBloc();
   }
 
   @override
@@ -22,17 +44,37 @@ class _NamazState extends State<Namaz> {
         appBar: AppBar(
           title: Text("Namaz"),
         ),
-        body: StreamBuilder(
-            stream: _bloc.output,
-            builder:
-                (BuildContext context, AsyncSnapshot<List<Items>> snapshot) {
-              if (snapshot.connectionState == ConnectionState.waiting) {
+        body: FutureBuilder(
+            future: getLoc(),
+            builder: (BuildContext context, AsyncSnapshot snapshot_loc) {
+              print(snapshot_loc.data);
+              if (!snapshot_loc.hasData) {
                 return Center(
                   child: CircularProgressIndicator(),
                 );
               } else {
-                return ListView(
-                    children: snapshot.data.map(_buildList).toList());
+                return StreamBuilder(
+                    stream: _bloc.output,
+                    builder: (BuildContext context,
+                        AsyncSnapshot<List<Items>> snapshot_nam) {
+                      if (snapshot_nam.connectionState ==
+                          ConnectionState.waiting) {
+                        return Center(
+                          child: CircularProgressIndicator(),
+                        );
+                      } else {
+                        return Column(
+                          children: <Widget>[
+                            Text(snapshot_loc.data),
+                            ListView(
+                                shrinkWrap: true,
+                                physics: ClampingScrollPhysics(),
+                                children:
+                                    snapshot_nam.data.map(_buildList).toList()),
+                          ],
+                        );
+                      }
+                    });
               }
             }));
   }
@@ -54,7 +96,10 @@ class _NamazState extends State<Namaz> {
                 border: Border(
                     bottom: BorderSide(color: Colors.white.withOpacity(0.5)))),
             child: ListTile(
-              title: Text(e.date_for,textAlign: TextAlign.center,),
+              title: Text(
+                e.date_for,
+                textAlign: TextAlign.center,
+              ),
             )),
         Padding(padding: EdgeInsets.all(10)),
         Container(

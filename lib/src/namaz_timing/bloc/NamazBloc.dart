@@ -14,21 +14,23 @@ class NamazBloc {
 
   Stream<List<Items>> get output => _HomePageController.stream;
 
-  NamazBloc() {
+  String place;
+
+  NamazBloc(this.place) {
     _cashedChapters = HashMap<int, List<Items>>();
 
-    update();
+    update(this.place);
   }
 
-  Future<void> update() async {
-    _chap = await getChapters();
+  Future<void> update(String place) async {
+    _chap = await getChapters(place);
     _incontroller.add(_chap);
   }
 
-  Future<List<Items>> getChapters() async {
+  Future<List<Items>> getChapters(String place) async {
     if (!_cashedChapters.containsKey(1)) {
       final storiesUrl =
-          'https://muslimsalat.com/karachi.json?key=a799a0c74cbbf705430b96fe60741b9c';
+          'https://muslimsalat.com/${place}.json?key=a799a0c74cbbf705430b96fe60741b9c';
       final storyRes = await http.get(Uri.parse(storiesUrl));
 
       if (storyRes.statusCode == 200) {

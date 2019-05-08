@@ -40,13 +40,13 @@ class _HadithPageState extends State<HadithPage> {
                       );
                     } else {
                       return ListView(
+                        padding: EdgeInsets.all(25),
                         children: <Widget>[
                           Text(snapshot.data.ref),
+                          SizedBox(height: 80),
                           Text(snapshot.data.text),
-                          Text(
-                            snapshot1.data,
-                            textAlign: TextAlign.right,
-                          )
+                          SizedBox(height: 20),
+
                         ],
                       );
                     }
@@ -54,7 +54,11 @@ class _HadithPageState extends State<HadithPage> {
             }
           }),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          setState(() {
+            _bloc=HadithBloc();
+          });
+        },
         child: Icon(Icons.refresh),
       ),
     );

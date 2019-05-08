@@ -215,9 +215,6 @@ class _$TodayWeatherSerializer implements StructuredSerializer<TodayWeather> {
   Iterable serialize(Serializers serializers, TodayWeather object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object>[
-      'pressure',
-      serializers.serialize(object.pressure,
-          specifiedType: const FullType(int)),
       'temperature',
       serializers.serialize(object.temperature,
           specifiedType: const FullType(String)),
@@ -237,10 +234,6 @@ class _$TodayWeatherSerializer implements StructuredSerializer<TodayWeather> {
       iterator.moveNext();
       final dynamic value = iterator.current;
       switch (key) {
-        case 'pressure':
-          result.pressure = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
         case 'temperature':
           result.temperature = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String;
@@ -781,17 +774,12 @@ class NamazBuilder implements Builder<Namaz, NamazBuilder> {
 
 class _$TodayWeather extends TodayWeather {
   @override
-  final int pressure;
-  @override
   final String temperature;
 
   factory _$TodayWeather([void Function(TodayWeatherBuilder) updates]) =>
       (new TodayWeatherBuilder()..update(updates)).build();
 
-  _$TodayWeather._({this.pressure, this.temperature}) : super._() {
-    if (pressure == null) {
-      throw new BuiltValueNullFieldError('TodayWeather', 'pressure');
-    }
+  _$TodayWeather._({this.temperature}) : super._() {
     if (temperature == null) {
       throw new BuiltValueNullFieldError('TodayWeather', 'temperature');
     }
@@ -807,20 +795,17 @@ class _$TodayWeather extends TodayWeather {
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is TodayWeather &&
-        pressure == other.pressure &&
-        temperature == other.temperature;
+    return other is TodayWeather && temperature == other.temperature;
   }
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, pressure.hashCode), temperature.hashCode));
+    return $jf($jc(0, temperature.hashCode));
   }
 
   @override
   String toString() {
     return (newBuiltValueToStringHelper('TodayWeather')
-          ..add('pressure', pressure)
           ..add('temperature', temperature))
         .toString();
   }
@@ -830,10 +815,6 @@ class TodayWeatherBuilder
     implements Builder<TodayWeather, TodayWeatherBuilder> {
   _$TodayWeather _$v;
 
-  int _pressure;
-  int get pressure => _$this._pressure;
-  set pressure(int pressure) => _$this._pressure = pressure;
-
   String _temperature;
   String get temperature => _$this._temperature;
   set temperature(String temperature) => _$this._temperature = temperature;
@@ -842,7 +823,6 @@ class TodayWeatherBuilder
 
   TodayWeatherBuilder get _$this {
     if (_$v != null) {
-      _pressure = _$v.pressure;
       _temperature = _$v.temperature;
       _$v = null;
     }
@@ -864,8 +844,7 @@ class TodayWeatherBuilder
 
   @override
   _$TodayWeather build() {
-    final _$result = _$v ??
-        new _$TodayWeather._(pressure: pressure, temperature: temperature);
+    final _$result = _$v ?? new _$TodayWeather._(temperature: temperature);
     replace(_$result);
     return _$result;
   }

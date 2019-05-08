@@ -191,11 +191,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        elevation: 6,
-        child: Icon(Icons.search),
-      ),
+
       // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
